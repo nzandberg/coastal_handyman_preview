@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Handyman | Sumner Handyman Services</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coastalBlue: '#2f6b96',
+                        coastalSand: '#f5f0e1',
+                        coastalAccent: '#ff6e40',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+
+    <!-- Sticky Mobile Call Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-coastalBlue text-white py-3 text-center font-bold shadow-lg sm:hidden z-50">
+        <a href="tel:021884312">📞 Call Rich — 021 884 312</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-slate-900 shadow-sm sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <span class="font-extrabold text-coastalBlue text-xl">Coastal Handyman</span>
+
+            <div class="hidden sm:flex gap-6 items-center font-medium">
+                <a href="#services" class="hover:text-coastalBlue">Services</a>
+                <a href="#about" class="hover:text-coastalBlue">About</a>
+                <a href="#contact" class="hover:text-coastalBlue">Contact</a>
+                <a href="tel:021884312" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold shadow hover:bg-orange-600">
+                    Call Richard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="py-16 px-4 bg-gradient-to-b from-slate-100 via-sky-50 to-slate-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-950">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Text -->
+            <div>
+                <span class="bg-coastalBlue text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Qualified NZ Builder
+                </span>
+
+                <h1 class="text-4xl md:text-5xl font-extrabold mt-4 leading-tight">
+                    Your Local Sumner Handyman — Reliable, Skilled, and On Time
+                </h1>
+
+                <p class="text-lg mt-4 text-slate-700 dark:text-slate-300">
+                    Small repairs, maintenance, and building jobs for coastal and hill homes across 
+                    <strong>Sumner, Redcliffs, Ferrymead, Mt Pleasant, and Scarborough.</strong>
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                    <a href="#contact" class="bg-coastalBlue text-white px-8 py-3 rounded-lg font-semibold shadow hover:bg-opacity-90">
+                        Book a Job
+                    </a>
+                    <a href="tel:021884312" class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold shadow hover:bg-orange-600">
+                        Call Richard
+                    </a>
+                </div>
+
+                <div class="flex flex-wrap gap-4 mt-6 text-sm text-slate-700 dark:text-slate-300">
+                    <span>✔ Qualified Builder</span>
+                    <span>✔ Local to Sumner</span>
+                    <span>✔ Fast Response</span>
+                    <span>✔ No Job Too Small</span>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="rounded-2xl overflow-hidden shadow-xl">
+                <img src="Rich.png" alt="Richard Clark - Coastal Handyman" class="w-full h-full object-cover">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-16 px-4 bg-white dark:bg-slate-950">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">What I Can Help With</h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">Door & Window Repairs</h3>
+                    <p class="text-sm">Fixing sticking doors, broken latches, loose hinges, and more.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">Fence & Gate Fixes</h3>
+                    <p class="text-sm">Repairs, replacements, and strengthening for coastal weather.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">Deck Repairs & Maintenance</h3>
+                    <p class="text-sm">Board replacement, structural fixes, and weatherproofing.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">Gutter Cleaning</h3>
+                    <p class="text-sm">Clearing blockages and ensuring proper drainage.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">Painting & Touch-Ups</h3>
+                    <p class="text-sm">Interior and exterior small-area painting and repairs.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">TV Mounting</h3>
+                    <p class="text-sm">Secure installation with tidy cable management.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">Curtain & Blind Installation</h3>
+                    <p class="text-sm">Accurate mounting and alignment for all window types.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">Kitchen & Bathroom Fixes</h3>
+                    <p class="text-sm">Cabinet repairs, hardware replacement, leak fixes, and more.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">General Home Maintenance</h3>
+                    <p class="text-sm">All the small jobs that keep your home running smoothly.</p>
+                </div>
+
+            </div>
+
+            <p class="text-center mt-8">
+                <a href="#contact" class="text-coastalBlue font-semibold underline">Need something else? Just ask.</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- GALLERY (your existing images) -->
+    <section id="gallery" class="bg-slate-50 dark:bg-slate-950 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-3">Recent Work</h2>
+            <p class="text-center text-slate-700 dark:text-slate-300 mb-10 max-w-2xl mx-auto">
+                A few examples of Richard’s craftsmanship and repair work around coastal homes and outdoor spaces.
+            </p>
+
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <img src="IMG_2290.JPG" class="rounded-3xl shadow-lg object-cover h-64 w-full">
+                <img src="IMG_2309.JPG" class="rounded-3xl shadow-lg object-cover h-64 w-full">
+                <img src="IMG_2611.JPG" class="rounded-3xl shadow-lg object-cover h-64 w-full">
+                <img src="IMG_2617.JPG" class="rounded-3xl shadow-lg object-cover h-64 w-full">
+                <img src="IMG_3086.JPG" class="rounded-3xl shadow-lg object-cover h-64 w-full sm:col-span-2 lg:col-span-1">
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-16 px-4 bg-white dark:bg-slate-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">What Locals Say</h2>
+
+            <div class="space-y-6">
+                <p class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl shadow">
+                    “Rich fixed our deck and did a brilliant job. Fast, friendly, and reliable.”
+                </p>
+                <p class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl shadow">
+                    “Turned up on time, worked efficiently, and the quality was excellent.”
+                </p>
+                <p class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl shadow">
+                    “Highly recommend — sorted multiple small jobs we’d been putting off.”
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16 px-4 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Meet Richard Clark</h2>
+                <p class="mb-4 leading-relaxed">
+                    Hi, I'm Richard. As a qualified NZ builder, I launched Coastal Handyman to give locals a reliable, highly skilled option for those jobs that sit between minor maintenance and major construction.
+                </p>
+                <p class="leading-relaxed">
+                    Based in Sumner, I specialise in helping coastal and hill homeowners keep their properties in top shape — from weatherproofing and repairs to small builds and general maintenance.
+                </p>
+            </div>
+
+            <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+                <img src="Rich.png" alt="Richard Clark" class="w-full h-full object-cover min-h-[18rem]">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 px-4 bg-slate-50 dark:bg-slate-950">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">FAQ</h2>
+
+            <div class="space-y-8">
+
+                <div>
+                    <h3 class="font-semibold text-lg mb-1">Do you do small jobs?</h3>
+                    <p class="text-sm text-slate-700 dark:text-slate-300">Absolutely — that’s my specialty.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg mb-1">What areas do you service?</h3>
+                    <p class="text-sm text-slate-700 dark:text-slate-300">
+                        Sumner, Redcliffs, Ferrymead, Mt Pleasant, Scarborough, and Heathcote.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg mb-1">Do you charge call-out fees?</h3>
+                    <p class="text-sm text-slate-700 dark:text-slate-300">
+                        Only for after-hours or urgent jobs. Standard daytime work is simple and transparent.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg mb-1">Are quotes free?</h3>
+                    <p class="text-sm text-slate-700 dark:text-slate-300">
+                        Yes — all larger projects come with a free quoted estimate.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-coastalBlue text-white py-16 px-4">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-2">Get Your Shore Fix</h2>
+            <p class="text-slate-200 text-center mb-6 text-sm">
+                Drop details of your job below, and Richard will get back to you with availability.
+            </p>
+
+            <p class="text-center mb-4 text-sm">
+                Prefer to call? <a href="tel:021884312" class="underline font-semibold">021 884 312</a>
+            </p>
+
+            <p class="text-center mb-8 text-sm">
+                Prefer email? <a href="mailto:richard@coastalhandyman.co.nz" class="underline font-semibold">richard@coastalhandyman.co.nz</a>
+            </p>
+
+            <form action="mailto:richard@coastalhandyman.co.nz" method="GET" enctype="text/plain" class="space-y-4 text-slate-800">
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-1">Your Name</label>
+                    <input type="text" name="name" required class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent">
+                </div>
+
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-1">Phone Number</label>
+                    <input type="tel" name="phone" required class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent">
+                </div>
+
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-1">Email Address</label>
+                    <input type="email" name="email" required class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent">
+                </div>
+
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-1">Describe the Job</label>
+                    <textarea name="message" rows="4" required class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-coastalAccent text-white font-bold py-3 rounded-lg hover:bg-opacity-90 shadow-lg">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-16 px-4 bg-white dark:bg-slate-900 text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready to Get That Job Sorted?</h2>
+        <a href="tel:021884312" class="bg-coastalBlue text-white px-8 py-3 rounded-lg font-bold shadow hover:bg-opacity-90">
+            Call Rich — 021 884 312
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 text-xs">
+        <p>&copy; 2026 Coastal Handyman Ltd. All Rights Reserved.</p>
+        <p class="mt-1">Proudly serving Sumner and surrounding coastal communities.</p>
+    </footer>
+
+</body>
+</html>
