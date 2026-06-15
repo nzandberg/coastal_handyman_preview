@@ -259,28 +259,37 @@
                 Prefer email? <a href="mailto:richard@coastalhandyman.co.nz" class="underline font-semibold">richard@coastalhandyman.co.nz</a>
             </p>
 
-            <form action="https://formspree.io/f/xzdqobyq" method="POST" class="space-y-4 text-slate-800">
+            <div data-fs-success class="hidden bg-green-100 text-green-800 p-4 rounded-lg mb-6 text-center font-semibold">
+                Thanks! We've received your message. Richard will be in touch soon.
+            </div>
+            <div data-fs-error class="hidden bg-red-100 text-red-800 p-4 rounded-lg mb-6 text-center font-semibold"></div>
+
+            <form id="contact-form" class="space-y-4 text-slate-800">
                 <div>
                     <label class="block text-white text-sm font-semibold mb-1">Your Name</label>
-                    <input type="text" name="name" required class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent">
+                    <input type="text" name="name" required data-fs-field class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent">
+                    <span data-fs-error="name" class="text-red-200 text-xs mt-1 block"></span>
                 </div>
 
                 <div>
                     <label class="block text-white text-sm font-semibold mb-1">Phone Number</label>
-                    <input type="tel" name="phone" required class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent">
+                    <input type="tel" name="phone" required data-fs-field class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent">
+                    <span data-fs-error="phone" class="text-red-200 text-xs mt-1 block"></span>
                 </div>
 
                 <div>
                     <label class="block text-white text-sm font-semibold mb-1">Email Address</label>
-                    <input type="email" name="email" required class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent">
+                    <input type="email" name="email" required data-fs-field class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent">
+                    <span data-fs-error="email" class="text-red-200 text-xs mt-1 block"></span>
                 </div>
 
                 <div>
                     <label class="block text-white text-sm font-semibold mb-1">Describe the Job</label>
-                    <textarea name="message" rows="4" required class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent"></textarea>
+                    <textarea name="message" rows="4" required data-fs-field class="w-full p-2.5 rounded-lg focus:ring-2 focus:ring-coastalAccent"></textarea>
+                    <span data-fs-error="message" class="text-red-200 text-xs mt-1 block"></span>
                 </div>
 
-                <button type="submit" class="w-full bg-coastalAccent text-white font-bold py-3 rounded-lg hover:bg-opacity-90 shadow-lg">
+                <button type="submit" data-fs-submit-btn class="w-full bg-coastalAccent text-white font-bold py-3 rounded-lg hover:bg-opacity-90 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed">
                     Send Message
                 </button>
             </form>
@@ -300,6 +309,12 @@
         <p>&copy; 2026 Coastal Handyman Ltd. All Rights Reserved.</p>
         <p class="mt-1">Proudly serving Sumner and surrounding coastal communities.</p>
     </footer>
+
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contact-form', formId: 'xzdqobyq' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
 </body>
 </html>
